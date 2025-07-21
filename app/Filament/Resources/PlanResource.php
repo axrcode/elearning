@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PlanResource\Pages;
+use App\Filament\Resources\PlanResource\RelationManagers\UsersRelationManager;
 use App\Models\Plan;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
@@ -113,7 +114,7 @@ class PlanResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            UsersRelationManager::class,
         ];
     }
 
