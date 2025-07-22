@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CourseResource\Pages;
+use App\Filament\Resources\CourseResource\RelationManagers\StudentsRelationManager;
 use App\Models\Course;
 use App\Models\User;
 use Filament\Forms\Components\Checkbox;
@@ -239,7 +240,7 @@ class CourseResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            StudentsRelationManager::class,
         ];
     }
 
