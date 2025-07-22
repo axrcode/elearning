@@ -22,7 +22,7 @@ class PlanResource extends Resource
 
     protected static ?string $navigationIcon = 'eos-product-subscriptions';
 
-    protected static ?int $navigationSort = 10;
+    protected static ?int $navigationSort = 20;
 
     public static function getLabel(): string
     {
